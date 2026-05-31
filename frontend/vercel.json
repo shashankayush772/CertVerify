@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://certverify-backend-z4ds.onrender.com/$1"
+      "destination": "https://certverify-qeck.onrender.com/$1"
     },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
