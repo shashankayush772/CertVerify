@@ -1,0 +1,16 @@
+.git
+.gitignore
+.env
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+uploads/
+frontend/
+contracts/
+CertVerify_Project_Report_Phase1.docx
+certverify_logo.jpg
