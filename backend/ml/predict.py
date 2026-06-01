@@ -137,6 +137,11 @@ def detect_forgery(image_path: str) -> Dict[str, Any]:
     global _RESNET_BUNDLE, _RESNET_LOAD_FAILED
 
     try:
+        # --- ML Temporarily Disabled for Render Free Tier (OOM Prevention) ---
+        print("[CertVerify] ML detection bypassed to prevent Render Free Tier OOM crash.")
+        return {"label": "unknown", "confidence": 0.0}
+        # ---------------------------------------------------------------------
+
         if _RESNET_LOAD_FAILED:
             return {"label": "unknown", "confidence": 0.0}
 
